@@ -9,8 +9,8 @@ import (
 
 var (
 	ServeMux  *dns.ServeMux
-	TCPSocket *dns.Server
-	UDPSocket *dns.Server
+	TCPSocket *dns.ServerMux
+	UDPSocket *dns.ServerMux
 )
 
 func beginDNS() {
